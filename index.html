@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        .ol-geocoder.gcd-gl-container {
+            top: 65px!important;
+            left: .5em!important;
+            width: 2.1em!important;
+            height: 2.1em!important;
+        }
+        .ol-geocoder .gcd-gl-container{
+            width: 2.1em!important;
+            height: 2.1em!important;
+        }
+        .ol-geocoder .gcd-gl-control{
+            width: 2.1em!important;
+        }
+        .ol-geocoder .gcd-gl-expanded {
+            width: 15.625em!important;
+            height: 2.1875em;
+        }
+        .ol-touch .ol-geocoder.gcd-gl-container{
+            top: 80px!important;
+        }
+        .ol-geocoder .gcd-gl-btn {
+            width: 1.375em!important;
+            height: 1.375em!important;
+            top: .225em!important;
+            background-image: none!important;
+        }
+        </style>
+<style>
+.search-layer {
+  top: 100px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 130px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/Asher_0.js"></script><script src="layers/Benjamin_1.js"></script><script src="layers/Dan_2.js"></script><script src="layers/Ephrim_3.js"></script><script src="layers/Gad_4.js"></script><script src="layers/Issacher_5.js"></script><script src="layers/Judah_6.js"></script><script src="layers/ManassehWeastJ_7.js"></script><script src="layers/Manasseh_8.js"></script><script src="layers/Naphtali2_9.js"></script><script src="layers/Reubem_10.js"></script><script src="layers/Zebulun_11.js"></script><script src="layers/Asher_12.js"></script><script src="layers/Benjamin_13.js"></script><script src="layers/Dan_14.js"></script><script src="layers/Ephrim_15.js"></script><script src="layers/Gad_16.js"></script><script src="layers/Issacher_17.js"></script><script src="layers/Judah_18.js"></script><script src="layers/ManassehWeastJ_19.js"></script><script src="layers/Manasseh_20.js"></script><script src="layers/Naphtali2_21.js"></script><script src="layers/Reubem_22.js"></script><script src="layers/Zebulun_23.js"></script><script src="layers/seasonal_24.js"></script><script src="layers/PermanentRivers_25.js"></script><script src="layers/JordanRiver_26.js"></script><script src="layers/JaushoaTillSaul_27.js"></script><script src="layers/AnceintTradeRoutes2_28.js"></script><script src="layers/AncientTradeRoutes_29.js"></script><script src="layers/Genesis24Mar_30.js"></script><script src="layers/Ibrahimtrip_31.js"></script><script src="layers/rivers_32.js"></script><script src="layers/NewTestmentTime_33.js"></script><script src="layers/plastaine_34.js"></script><script src="layers/OlastaineDeviding_35.js"></script><script src="layers/Acts_36.js"></script><script src="layers/firsttrip_37.js"></script><script src="layers/Forthtrip_38.js"></script><script src="layers/secondtrip_39.js"></script><script src="layers/therdtrip_40.js"></script>
+        <script src="styles/Asher_0_style.js"></script><script src="styles/Benjamin_1_style.js"></script><script src="styles/Dan_2_style.js"></script><script src="styles/Ephrim_3_style.js"></script><script src="styles/Gad_4_style.js"></script><script src="styles/Issacher_5_style.js"></script><script src="styles/Judah_6_style.js"></script><script src="styles/ManassehWeastJ_7_style.js"></script><script src="styles/Manasseh_8_style.js"></script><script src="styles/Naphtali2_9_style.js"></script><script src="styles/Reubem_10_style.js"></script><script src="styles/Zebulun_11_style.js"></script><script src="styles/Asher_12_style.js"></script><script src="styles/Benjamin_13_style.js"></script><script src="styles/Dan_14_style.js"></script><script src="styles/Ephrim_15_style.js"></script><script src="styles/Gad_16_style.js"></script><script src="styles/Issacher_17_style.js"></script><script src="styles/Judah_18_style.js"></script><script src="styles/ManassehWeastJ_19_style.js"></script><script src="styles/Manasseh_20_style.js"></script><script src="styles/Naphtali2_21_style.js"></script><script src="styles/Reubem_22_style.js"></script><script src="styles/Zebulun_23_style.js"></script><script src="styles/seasonal_24_style.js"></script><script src="styles/PermanentRivers_25_style.js"></script><script src="styles/JordanRiver_26_style.js"></script><script src="styles/JaushoaTillSaul_27_style.js"></script><script src="styles/AnceintTradeRoutes2_28_style.js"></script><script src="styles/AncientTradeRoutes_29_style.js"></script><script src="styles/Genesis24Mar_30_style.js"></script><script src="styles/Ibrahimtrip_31_style.js"></script><script src="styles/rivers_32_style.js"></script><script src="styles/NewTestmentTime_33_style.js"></script><script src="styles/plastaine_34_style.js"></script><script src="styles/OlastaineDeviding_35_style.js"></script><script src="styles/Acts_36_style.js"></script><script src="styles/firsttrip_37_style.js"></script><script src="styles/Forthtrip_38_style.js"></script><script src="styles/secondtrip_39_style.js"></script><script src="styles/therdtrip_40_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
